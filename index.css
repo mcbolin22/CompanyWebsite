@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  background-color: black;
+}
+
+header {
+  background-color: grey;
+  padding: 16px;
+  text-align: center;
+}
+header .logo {
+  margin-bottom: 48px;
+}
+header .logo img {
+  width: 150px;
+  height: 100px;
+}
+header .logo .name {
+  font-size: 32px;
+}
+header .logo .name .company-text {
+  color: orange;
+}
+header .logo .name .name-text {
+  color: white;
+}
+header #nav-items {
+  display: flex;
+  justify-content: space-around;
+  font-size: 18px;
+}
+header #nav-items a {
+  text-decoration: none;
+  color: black;
+}/*# sourceMappingURL=index.css.map */

@@ -1,8 +1,52 @@
-img {
-    width: 10vw;
-    height: 10vh;
+$primarycolor: orange;
+$secondarycolor: white;
+$backgroundcolor: black;
+$boxcolor: grey;
+
+
+
+
+body {
+    margin: 0;
+    background-color: $backgroundcolor;
 }
 
-#nav-items {
+header {
+    background-color: $boxcolor;
+    padding: 16px;
+    text-align: center;
+
+    .logo {
+        margin-bottom: 48px;
+        
+        img {
+            width: 150px;
+            height: 100px;
+        }
+        
+        .name {
+            font-size: 32px;
+            
+            .company-text {
+                color: $primarycolor;
+            }
+            .name-text {
+                color: $secondarycolor;
+            }
+        }
+
+    }
     
+    #nav-items {
+        display: flex;
+        justify-content: space-around;
+        font-size: 18px;
+
+        a {
+            text-decoration: none;
+            color: $backgroundcolor;
+            
+        }
+    }
 }
+
