@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  background-color: black;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body .details {
+  color: white;
+}
+
+.main-image {
+  width: 100vw;
+  display: none;
+  order: -1;
+}/*# sourceMappingURL=index.css.map */
