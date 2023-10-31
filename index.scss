@@ -3,7 +3,11 @@ $secondarycolor: white;
 $backgroundcolor: black;
 $boxcolor: grey;
 
-
+@mixin background-stuff {
+    background-color: $boxcolor;
+    padding: 16px;
+    text-align: center;
+}
 
 
 body {
@@ -17,13 +21,13 @@ body {
 
 }
 
-header {
-    background-color: $boxcolor;
-    padding: 16px;
-    text-align: center;
+header {  
+    @include background-stuff();
 
     .logo {
-        margin-bottom: 48px;
+        @media screen and (max-width: 600px) {
+            margin-bottom: 48px;
+        }
         
         img {
             width: 150px;
@@ -56,10 +60,26 @@ header {
     }
 }
 
+@media screen and (min-width: 600px){
+    header {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+
+        .logo {
+            .name {
+                margin-bottom: 0;
+            }
+        }
+
+        #nav-items {
+            width: 50%;
+        }
+    }
+}
+    
 footer {
-    background-color: $boxcolor;
-    padding: 16px;
-    text-align: center;
+    @include background-stuff();
 
     .socialmedia {
         display: flex;
@@ -80,3 +100,12 @@ footer {
     }
 }
 
+@media screen and (min-width: 600px) {
+    footer {
+        .socialmedia {
+            width: 50pc;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
