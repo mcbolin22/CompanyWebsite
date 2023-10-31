@@ -9,6 +9,12 @@ $boxcolor: grey;
 body {
     margin: 0;
     background-color: $backgroundcolor;
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
 }
 
 header {
@@ -46,6 +52,30 @@ header {
             text-decoration: none;
             color: $backgroundcolor;
             
+        }
+    }
+}
+
+footer {
+    background-color: $boxcolor;
+    padding: 16px;
+    text-align: center;
+
+    .socialmedia {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 32px;
+
+        a {
+            i {
+                font-size: 24px;
+                color: $backgroundcolor;
+                
+            }
+        }
+
+        .info {
+            color: $backgroundcolor;
         }
     }
 }

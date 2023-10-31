@@ -1,6 +1,10 @@
 body {
   margin: 0;
   background-color: black;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 header {
@@ -31,5 +35,23 @@ header #nav-items {
 }
 header #nav-items a {
   text-decoration: none;
+  color: black;
+}
+
+footer {
+  background-color: grey;
+  padding: 16px;
+  text-align: center;
+}
+footer .socialmedia {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 32px;
+}
+footer .socialmedia a i {
+  font-size: 24px;
+  color: black;
+}
+footer .socialmedia .info {
   color: black;
 }/*# sourceMappingURL=index.css.map */

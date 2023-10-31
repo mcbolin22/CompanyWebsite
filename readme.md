@@ -27,3 +27,29 @@ Here is the code for the header we have:
         </nav>
     </header>
 ```
+
+### Footer
+Footer has social media links, and some contact information with links
+Here is the code for the footer:
+```html
+<footer>
+        <div class="socialmedia">
+            <a href="https://www.facebook.com" target="_blank">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.github.com" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+        </div>
+        <div class="info">
+            <p>Contact: 1234567890</p>
+            <p>Address: 42 Wallaby Way, Sydney, NSW 2000</p>
+        </div>
+</footer>
+```
