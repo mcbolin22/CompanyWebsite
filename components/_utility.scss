@@ -1,0 +1,7 @@
+@import "../styles/_colors.scss";
+
+@mixin background-stuff {
+    background-color: $boxcolor;
+    padding: 16px;
+    text-align: center;
+}

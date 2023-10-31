@@ -1,0 +1,35 @@
+@import "../styles/_colors";
+@import "../styles/breakpoints";
+@import "./components/_utility";
+
+footer {
+    @include background-stuff();
+
+    .socialmedia {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 32px;
+
+        a {
+            i {
+                font-size: 24px;
+                color: $backgroundcolor;
+                
+            }
+        }
+
+        .info {
+            color: $backgroundcolor;
+        }
+    }
+}
+
+@media screen and (min-width: $medium) {
+    footer {
+        .socialmedia {
+            width: 50pc;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}

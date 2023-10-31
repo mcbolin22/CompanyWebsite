@@ -7,39 +7,6 @@ body {
   justify-content: space-between;
 }
 
-header {
-  background-color: grey;
-  padding: 16px;
-  text-align: center;
-}
-@media screen and (max-width: 600px) {
-  header .logo {
-    margin-bottom: 48px;
-  }
-}
-header .logo img {
-  width: 150px;
-  height: 100px;
-}
-header .logo .name {
-  font-size: 32px;
-}
-header .logo .name .company-text {
-  color: orange;
-}
-header .logo .name .name-text {
-  color: white;
-}
-header #nav-items {
-  display: flex;
-  justify-content: space-around;
-  font-size: 18px;
-}
-header #nav-items a {
-  text-decoration: none;
-  color: black;
-}
-
 @media screen and (min-width: 600px) {
   header {
     display: flex;

@@ -1,14 +1,7 @@
-$primarycolor: orange;
-$secondarycolor: white;
-$backgroundcolor: black;
-$boxcolor: grey;
-
-@mixin background-stuff {
-    background-color: $boxcolor;
-    padding: 16px;
-    text-align: center;
-}
-
+@import "./styles/_colors.scss";
+@import "./styles/breakpoints";
+@import "./components/header";
+@import "./components/footer";
 
 body {
     margin: 0;
@@ -19,93 +12,4 @@ body {
     flex-direction: column;
     justify-content: space-between;
 
-}
-
-header {  
-    @include background-stuff();
-
-    .logo {
-        @media screen and (max-width: 600px) {
-            margin-bottom: 48px;
-        }
-        
-        img {
-            width: 150px;
-            height: 100px;
-        }
-        
-        .name {
-            font-size: 32px;
-            
-            .company-text {
-                color: $primarycolor;
-            }
-            .name-text {
-                color: $secondarycolor;
-            }
-        }
-
-    }
-    
-    #nav-items {
-        display: flex;
-        justify-content: space-around;
-        font-size: 18px;
-
-        a {
-            text-decoration: none;
-            color: $backgroundcolor;
-            
-        }
-    }
-}
-
-@media screen and (min-width: 600px){
-    header {
-        display: flex;
-        align-items: flex-end;
-        justify-content: space-between;
-
-        .logo {
-            .name {
-                margin-bottom: 0;
-            }
-        }
-
-        #nav-items {
-            width: 50%;
-        }
-    }
-}
-    
-footer {
-    @include background-stuff();
-
-    .socialmedia {
-        display: flex;
-        justify-content: space-around;
-        margin-bottom: 32px;
-
-        a {
-            i {
-                font-size: 24px;
-                color: $backgroundcolor;
-                
-            }
-        }
-
-        .info {
-            color: $backgroundcolor;
-        }
-    }
-}
-
-@media screen and (min-width: 600px) {
-    footer {
-        .socialmedia {
-            width: 50pc;
-            margin-left: auto;
-            margin-right: auto;
-        }
-    }
 }

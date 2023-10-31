@@ -1,0 +1,61 @@
+@import "../styles/_colors";
+@import "../styles/breakpoints";
+@import "./components/_utility";
+
+header {  
+    @include background-stuff();
+
+    .logo {
+        @media screen and (max-width: $medium) {
+            margin-bottom: 48px;
+        }
+        
+        img {
+            width: 150px;
+            height: 100px;
+        }
+        
+        .name {
+            font-size: 32px;
+            
+            .company-text {
+                color: $primarycolor;
+            }
+            .name-text {
+                color: $secondarycolor;
+            }
+        }
+
+    }
+    
+    #nav-items {
+        display: flex;
+        justify-content: space-around;
+        font-size: 18px;
+
+        a {
+            text-decoration: none;
+            color: $backgroundcolor;
+            
+        }
+    }
+}
+
+@media screen and (min-width: $medium){
+    header {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+
+        .logo {
+            .name {
+                margin-bottom: 0;
+            }
+        }
+
+        #nav-items {
+            width: 50%;
+        }
+    }
+}
+ 
