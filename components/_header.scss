@@ -1,6 +1,6 @@
 @import "../styles/_colors";
 @import "../styles/breakpoints";
-@import "./components/_utility";
+@import "./_utility";
 
 header {  
     @include background-stuff();
