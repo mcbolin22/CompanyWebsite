@@ -1,25 +1,14 @@
 @import "./styles/_colors.scss";
 @import "./styles/breakpoints";
+@import "./components/header";
+@import "./components/footer";
 
 body {
     margin: 0;
     background-color: $backgroundcolor;
-    
-    .details {
-        color: white;
-    }
-    
-    
-
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
-}
-
-.main-image {
-    width: 100vw;
-    display: none;
-    order: -1;
 }

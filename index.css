@@ -1,3 +1,79 @@
+header {
+  background-color: grey;
+  padding: 16px;
+  text-align: center;
+}
+@media screen and (max-width: 600px) {
+  header .logo {
+    margin-bottom: 48px;
+  }
+}
+header .logo img {
+  width: 150px;
+  height: 100px;
+}
+header .logo .name {
+  font-size: 32px;
+}
+header .logo .name .company-text {
+  color: orange;
+}
+header .logo .name .name-text {
+  color: white;
+}
+header #nav-items {
+  display: flex;
+  justify-content: space-around;
+  font-size: 18px;
+}
+header #nav-items a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 600px) {
+  header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+  header .logo .name {
+    margin-bottom: 0;
+  }
+  header #nav-items {
+    width: 50%;
+  }
+}
+footer {
+  background-color: grey;
+  padding: 16px;
+  text-align: center;
+}
+footer .socialmedia {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 32px;
+}
+footer .socialmedia a i {
+  font-weight: bold;
+  font-size: 24px;
+  color: black;
+}
+footer .socialmedia .info {
+  color: black;
+}
+footer .socialmedia .info p {
+  font-weight: bold;
+}
+
+@media screen and (min-width: 600px) {
+  footer .socialmedia {
+    width: 50pc;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 body {
   margin: 0;
   background-color: black;
@@ -5,13 +81,4 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-body .details {
-  color: white;
-}
-
-.main-image {
-  width: 100vw;
-  display: none;
-  order: -1;
 }/*# sourceMappingURL=index.css.map */

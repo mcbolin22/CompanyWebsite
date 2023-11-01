@@ -29,6 +29,7 @@ header #nav-items {
 header #nav-items a {
   text-decoration: none;
   color: black;
+  font-weight: bold;
 }
 
 @media screen and (min-width: 600px) {
@@ -55,11 +56,15 @@ footer .socialmedia {
   margin-bottom: 32px;
 }
 footer .socialmedia a i {
+  font-weight: bold;
   font-size: 24px;
   color: black;
 }
 footer .socialmedia .info {
   color: black;
+}
+footer .socialmedia .info p {
+  font-weight: bold;
 }
 
 @media screen and (min-width: 600px) {

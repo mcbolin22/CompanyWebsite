@@ -12,6 +12,7 @@ footer {
 
         a {
             i {
+                font-weight: bold;
                 font-size: 24px;
                 color: $backgroundcolor;
                 
@@ -20,6 +21,10 @@ footer {
 
         .info {
             color: $backgroundcolor;
+
+            p {
+                font-weight: bold;
+            }
         }
     }
 }

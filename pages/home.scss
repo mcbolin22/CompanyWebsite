@@ -1,1 +1,26 @@
-@import "../index.scss"
+@import "../index.scss";
+
+main {
+    section {
+        align-items: center;
+        text-align: center;
+        .main-image {
+            img {
+                width: 75vw;
+            }
+            
+        }
+        .details {
+            p {
+                font-size: 1.5em;
+                color: $secondarycolor;
+            }
+            
+        }
+    }
+}
+
+
+    
+
+
