@@ -81,4 +81,33 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+@media screen and (min-width: 600px) {
+  main {
+    flex-direction: row;
+  }
+}
+main article {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 20px 0px;
+  border: 1px solid orange;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  background-color: gray;
+}
+main article section .blog-image {
+  width: 400px;
+}
+main article section h3 {
+  color: white;
 }/*# sourceMappingURL=services.css.map */
