@@ -36,18 +36,20 @@ main {
             }
         }
 
-        .btn-div {
-            text-align: center;
+    }  
+    
+    .btn-div {
+        text-align: center;
 
-            #submit {
+        #submit {
                 height: 40px;
                 background-color: $primarycolor;
                 border: none;
                 min-width: 120px;
                 font-size: 1.2rem;
                 border-radius: 4px;
-            }
         }
+        
     }
 }
 

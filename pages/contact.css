@@ -112,10 +112,10 @@ main form .form-elements .form-input:not(#form-textarea) {
 main form .form-elements .form-input:focus {
   box-shadow: 0 0 10px 3px orange;
 }
-main form .btn-div {
+main .btn-div {
   text-align: center;
 }
-main form .btn-div #submit {
+main .btn-div #submit {
   height: 40px;
   background-color: orange;
   border: none;
